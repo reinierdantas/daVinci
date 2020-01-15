@@ -1,84 +1,324 @@
-/*Reset - Geral - noSelect*/
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
-.bgHome{
-    background-image: url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
 
-}
-html body{
+html,
+body {
     height: 100%;
+    background: #fff6f6;
 }
-ul, li{
-    list-style-type: none;
+
+img {
+    max-width: 100%;
 }
-a{
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
     text-decoration: none;
 }
-.noSelect { 
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none; 
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none;
-    -webkit-tap-highlight-color: transparent
+
+h1,
+h6 {
+    font-family: Helvetica;
 }
 
-/*Header*/
-.lateralMenu{
-    background: #000;
-    z-index: 1;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 10%;
+h6 {
+    color: #620217;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+p {
+    font-family: monospace;
+    font-size: 0.975rem;
+}
+
+audio {
     max-width: 100%;
+    padding: 10px 0;
+}
+/* Header */
+
+.header-bg {
+    background-image: url(../images/background.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* Call */
+.call {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 250px 50px;
+}
+
+.call-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.call-info p {
+    padding: 10px 0px 0px 0px;
+    font-weight: 700;
+    width: 800px;
+    max-width: 100%;
+}
+/* Opening */
+.opening {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0px 150px 0px;
+}
+
+.opening img {
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    max-height: auto;
+    border-radius: 3px;
+}
+/* Art */
+.art {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+.art-info {
+    flex: 1 1 400px;
+    background: #620217;
+    padding: 150px 50px;
+    text-align: center;
+}
+
+.art-info p {
+    padding: 10px;
+}
+
+.art-image {
+    max-height: 408px;
+    width: 100%;
+    flex: 1 1 400px;
+}
+
+.art-image img {
+    width: 100%;
+    height: 408px;
+    max-height: 100%;
+}
+
+.art-full {
+    width: 100%;
+}
+
+.art-full img {
+    width: 100%;
+    height: 450px;
+}
+/* Artist */
+.artist {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 250px 50px;
+    height: auto;
+}
+
+.artist-image {
+    flex: 1 1 500px;
+}
+
+.artist-image img {
+    width: 400px;
+    border-radius: 3px;
     height: 100%;
 }
-.lateralMenu a{
-    color: #919090;
-    font-size: 0.8em;
+
+.artist-info {
+    flex: 1 1 400px;
 }
-.lateralMenu i{
-    color: #919090;;
-    width: 100%;
-    font-size: 36px;
-    padding-top: 40px;
+
+.artist-info h1,
+.artist-info p {
+    padding: 10px 0;
 }
-.lateralMenu i:hover{
+
+.artist-info p {
+    text-align: justify;
+
+}
+
+blockquote {
+    display: flex;
+}
+
+blockquote i {
+    padding-right: 10px;
+    font-size: 2rem;
     color: #ccc;
 }
-@media(max-width:555px){
-    .lateralMenu{
-        width: 10%; 
-    }
-    .lateralMenu i{
-        font-size: 25px;
-        padding-top: 40px;
-    }
-    .lateralMenu a{
-        font-size: 0.55em;
+
+blockquote small {
+    color: rgb(102, 100, 100);
+}
+/* Works */
+.works {
+    padding: 250px 50px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.work-call {
+    text-align: center;
+}
+
+.work-call p {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.davinci-work {
+    padding: 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.work-info {
+    flex: 1 1 400px;
+    padding: 10px;
+    border-left: 5px solid #620217;
+}
+
+.work-info p {
+    text-align: justify;
+}
+
+.work-image {
+    flex: 1 1 400px;
+    padding: 10px 40px;
+}
+
+.work-image img {
+    width: 500px;
+    height: 600px;
+    border-radius: 3px;
+}
+
+.davinci-wrapper {
+    flex-direction: row-reverse;
+}
+
+.reverse {
+    border-left: none;
+    border-right: 5px solid #620217;
+}
+
+.reverse-img {
+    padding: 10px 0 !important;
+}
+/* footer */
+.foot {
+    background: #620217;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/***********Media Queries *************/
+@media (max-width: 700px) {
+    .work-image {
+        padding: 10px 0;
     }
 }
-@media(max-width:380px){
-    .lateralMenu i{
-        font-size: 20px;
-        padding-top: 40px;
+
+@media (max-width: 675px) {
+    .artist {
+        flex-direction: column;
+        padding: 100px 0px;
+        height: auto;
     }
-    .lateralMenu a{
-        font-size: 0.4em;
+
+    .artist-image {
+        width: 100%;
+        flex: 1;
+    }
+
+    .artist-image img {
+        display: block;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .artist-info {
+        width: 100%;
+        flex: 1;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .artist-info p {
+        text-align: justify;
+    }
+
+    .works {
+        padding: 100px 10px;
+    }
+
+    .davinci-work {
+        padding: 100px 0px;
+        flex-direction: column;
+    }
+
+    .work-info {
+        width: 100%;
+        flex: 1;
+        padding: 10px;
+        border-left: 5px solid #620217;
+    }
+
+    .work-info p {
+        text-align: justify;
+    }
+
+    .work-image {
+        width: 100%;
+        flex: 1;
+        padding: 10px 0px;
+    }
+
+    .work-image img {
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .davinci-wrapper {
+        flex-direction: column;
+    }
+
+    .reverse {
+        border-left: 5px solid #620217;
+        border-right: none;
     }
 }
